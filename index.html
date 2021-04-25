@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Daiane Nutricionista</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="https://fonts.googleapis.com/css2?family=Domine&family=Nunito:ital@1&family=Yellowtail&display=swap" 
+		rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" 
+		rel="stylesheet">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h2 class="titulo">Daiane Gonçalves - Nutricionista</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Cálculo do Índice de Massa Corporal (IMC)</h2>
+				<label for="filtrar-tabela">Filtro de busca</label>
+				<input type="text" name="filtro" id="filtrar-tabela" 
+				placeholder="Digite o nome do paciente">
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Peso(kg)</th>
+							<th>Altura(m)</th>
+							<th>Gordura Corporal(%)</th>
+							<th>IMC</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pacientes">
+						<tr class="paciente" id="primeiro-paciente">
+							<td class="info-nome">Michael Couto</td>
+							<td class="info-peso">72.0</td>
+							<td class="info-altura">1.72</td>
+							<td class="info-gordura">10</td>
+							<td class="info-imc">0</td>
+						</tr>
+					</tbody>
+				</table>
+				<span id="erro-ajax" class="invisivel">Erro ao buscar os pacientes</span>
+				<button id="buscar-pacientes" class="botao bto-principal">
+					Buscar pacientes
+				</button>
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Adicionar novo paciente</h2>
+			<ul id="mensagens-erro">
+
+			</ul>
+		    <form id="form-adiciona">
+		        <div class="">
+		            <label for="nome">Nome:</label>
+		            <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="peso">Peso:</label>
+		            <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="altura">Altura:</label>
+		            <input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="gordura">% de Gordura:</label>
+		            <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+		        </div>
+
+		        <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+		    </form>
+		</section>
+		<span class="tituloTab">Valores IMC</span>
+		<table class="containerLegenda">
+			<thead class="tabLegenda">
+				<tr>
+					<th class="tabLegenda">IMC</th>
+					<th class="tabLegenda">Classificação</th>
+				</tr>
+			</thead>
+			<tbody class="tabLegenda">
+				<tr>
+					<td>abaixo de 18,5</td>
+					<td>abaixo do peso</td>
+				</tr>
+				<tr>
+					<td>entre 18,6 a 24,9</td>
+					<td>Peso ideal Parabéns!!</td>
+				</tr>
+				<tr>
+					<td>entre 25,0 e 29,9</td>
+					<td>Levemente acima do peso</td>
+				</tr>
+				<tr>
+					<td>entre 30,0 e 34,9</td>
+					<td>Obesidade grau I</td>
+				</tr>
+				<tr>
+					<td>entre 35,0 e 39,9</td>
+					<td>Obesidade grau II (severa)</td>
+				</tr>
+				<tr>
+					<td>acima de 40</td>
+					<td>Obesidade grau III (mórbida)</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="containerImagen">
+			<a href="https://www.instagram.com/_dayanecg/">
+			<img src="img/thumbnail_20210423_222919.jpg" alt="foto nutricionista" class="img-day"/>
+			</a>
+			<p class="frase">"Uma Alimentação saudável é a base de todo bem estar.<br>
+				A vida é feita de escolhas, escolha ser saudável."	
+			</p>	
+		</div>
+
+		<script src="js/calcula-Imc.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/remover-paciente.js"></script>
+		<script src="js/filtra.js"></script>
+		<script src="js/buscar-pacientes.js"></script>
+	</body>
+	<footer>
+		<img src="img/footer.jpg">
+		<p class="copyright">&copy;Copyright Michael Couto - 2021</p>
+		<ul class="contatos">
+			<li>
+				<a href="https://github.com/MichaelParaizo">
+					<img src="img/3128308.png" class="contato" alt="github">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/michael_pcouto/">
+					<img src="img/3621464.png" class="contato" alt="instagram">
+				</a>
+			</li>
+			<li>
+				<a href="mailto:michael-couto@hotmail.com">
+					<img src="img/e-mail.png" class="contato" alt="e-mail">
+				</a>
+			</li>
+		</ul>
+	</footer>
+</html>

@@ -1,0 +1,282 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	background-color: linear-gradient(#E0FFFF,#F0FFFF,#FFC0CB);
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background-image: url('https://lh3.googleusercontent.com/proxy/Ulo693B52ozHABww73g3CazyMlM7zJhBhA0LTsrsx6t_0HD16WRQlusgR0WfxNlqshHhlAEijZWwhqiGK-P3V9Ia6E4LbkJ_Gh8X-9l89GOO7vnTYGU2MG4r92oHjrDh_Vwk2B5ANPQGk1j1bLNKz5jc3HHQRcA');
+    background-size: 220vh;
+    background-position: center bottom;
+
+}
+
+header{
+	background: linear-gradient(#FF69B4,#FFC0CB);
+	height: 7em;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+header h2{
+	font-size: 50px;
+	display:inline-block;
+	vertical-align:	middle;
+	font-family: 'Yellowtail', cursive;
+	color:#555;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 2em;
+	display: block;
+	padding: .2em 0 .2em;
+	border-bottom: 1px solid #808080;
+	margin: .2em 0 .4em; 
+	background-color:#FFEBCD;
+	border-radius: 5px ;
+	text-align: center;
+	
+}
+
+#form-adiciona{
+	font-size: 15px;
+	background-color: #ccc;
+	opacity: 0.9;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td{
+	background-color: white;
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: black;
+	display: block;
+	margin-bottom: .2em;
+	font-weight: bold;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+.paciente-invalido{
+	background-color:lightcoral;
+}
+
+#mensagens-erro{
+	color:red;
+	
+}
+
+.fadeOut{
+	opacity:0;
+	transition:0.5s;
+}
+
+#filtrar-tabela{
+	width:200px;
+	height:35px;
+	margin-bottom:10px;
+	
+}
+
+.invisivel{
+	display:none;
+}
+
+#titulo-form {
+	font-family: 'Domine', serif;
+	text-align: center;
+}
+
+.primeirotitulo{
+	font-family: 'Domine', serif;
+}
+
+#nome, #peso, #altura, #gordura{
+	border: 1px solid #808080;
+}
+
+.tituloTab{
+	padding: 3px;
+	width: 60%;
+	margin: 0 auto;
+	display: block;
+	font-size: 2em;
+	text-align: center;
+	font-style: italic;
+	font-family: 'Domine', serif;
+	color:white;
+	font-weight: bold;
+}
+
+.tabLegenda{
+	border: 2px solid black;
+	background-color:#87CEFA;
+}
+
+.containerLegenda{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	opacity: 0.8;
+}
+
+.containerImagen{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.img-day{
+	position: relative;
+	border-radius: 10px;
+	max-width: 70%;
+	margin: 3em 14.5% 0;
+	box-shadow: 3px 2px 2px #000000;
+	
+	
+}
+
+.frase{
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 1em;
+	text-align: center;
+	font-family: 'Yellowtail', cursive;
+	font-size: 3em;
+	background-color:white;
+	opacity: 0.7;
+	border-radius: 10px;
+}
+/*---------------------------------footer*/
+
+footer{
+	background: linear-gradient(#FF69B4,#FFC0CB);
+	height: 10em;
+	margin-top: 2em;
+	text-align: center;
+}
+
+footer img{
+	padding-top: 2em;
+	max-width: 50px;
+	opacity: 0.9;
+	border-radius: 20px;
+}
+
+.copyright{
+	padding-bottom: 2px;
+	margin-top: 6px;
+	color:black;
+ }
+
+ .contatos li{
+	 display: inline;
+	 margin: 5px;	
+ }
+
+ .contato{
+	 max-width: 25px;
+	padding-top: 6px;	
+ }
+
+
